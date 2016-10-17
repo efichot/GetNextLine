@@ -19,7 +19,8 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 				ft_putnbr_fd.c ft_putendl_fd.c ft_lstnew.c ft_lstdel.c ft_lstadd.c \
 				ft_lstmap.c ft_lstdelone.c ft_lstiter.c ft_lstpushback.c ft_lstsize.c \
 				ft_arrsize.c ft_arrnew.c ft_arriter.c ft_arriteri.c ft_arradd.c \
-				ft_arrdel.c ft_arrdup.c ft_itoa_base.c ft_lstfold.c ft_strsplitlst.c
+				ft_arrdel.c ft_arrdup.c ft_itoa_base.c ft_lstfold.c ft_strsplitlst.c \
+				ft_strchrpos.c
 
 OBJ = $(SRC:.c=.o)
 

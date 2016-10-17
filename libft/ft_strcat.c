@@ -5,9 +5,7 @@ char *ft_strcat(char *dst, const char *src)
   int i;
   int j;
 
-  i = 0;
-  while (dst[i])
-    i++;
+  i = ft_strlen(dst);
   j = 0;
   while (src[j])
   {
