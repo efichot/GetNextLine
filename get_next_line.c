@@ -2,7 +2,7 @@
 
 int ft_read_failed(int ret, char **stock)
 {
-  ft_putendl("Read() failed");
+  ft_putendl_fd("Read() failed", 2);
   ft_strdel(stock);
   return (ret);
 }
@@ -27,7 +27,7 @@ int		get_next_line(int const fd, char **line)
 	if (fd < 0 || !line || BUFF_SIZE < 1 || BUFF_SIZE > 10000000)
 		return (-1);
 	buffer = ft_strnew(BUFF_SIZE);
-	stock = (stock == NULL) ? ft_memalloc(BUFF_SIZE) : stock;
+	stock = (!stock) ? ft_memalloc(BUFF_SIZE) : stock;
 	while (!(ft_strchr(stock, '\n')))
 	{
 		if (!(ret = read(fd, buffer, BUFF_SIZE)))
